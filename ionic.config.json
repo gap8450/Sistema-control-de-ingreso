@@ -1,0 +1,7 @@
+{
+  "name": "controlingreso",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
