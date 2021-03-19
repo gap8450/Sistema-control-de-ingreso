@@ -1,3 +1,27 @@
-<p>
-  login works!
-</p>
+    <!-- CONTENEDOR -->
+ <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="30px">  
+
+  <div fxLayout fxLayoutAlign="center">
+    <img src="assets/img/Logoumb.png"/> <!-- LOGO -->
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="10px">
+       <!-- INPUT USUARIO -->
+      <mat-form-field appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <input matInput>
+      </mat-form-field>
+       <!-- INPUT CONTRASEÑA -->
+      <mat-form-field appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+     <!-- BOTON ENTRAR -->
+    <button mat-stroked-button color="primary" >Entrar</button>
+  </div>
+</div>
+
