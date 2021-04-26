@@ -1,0 +1,30 @@
+
+<mat-sidenav-container> 
+  <mat-sidenav #sidenav mode="hover"> <!-- barra de despegable-->
+    <mat-nav-list fxFlex="column "fxLayout="column" fxLayoutAlign= "end">
+      <a mat-list-item routerLink="/publico"> Inicio </a> <!-- Boton inicio-->
+      <a mat-list-item routerLink="/login"> Configuración </a> <!-- Boton configuración-->
+      <a mat-list-item routerLink="/login"> Cerrar sesión </a> <!-- Boton Cerrar sesión-->
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content> <!-- Contenedor de la pagina-->
+    <mat-toolbar> <!-- Barra de navegación-->
+      <button mat-icon-button (click)="sidenav.toggle()">   
+        <mat-icon>menu</mat-icon> <!-- Icono de Hamburguesa-->
+      </button>
+      <span class="nombrelogo"> Sistema de control de ingreso </span> <!-- Nombre en la barra de navegación-->
+    </mat-toolbar>
+    <mat-grid-list cols="2" rowHeight="100%">
+      <mat-grid-tile>
+        <div> <!-- contenido pagina-->
+          <button mat-raised-button color="primary" class="buttoningreso">Ingreso</button> <!--boton Ingreso-->
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div>
+          <button mat-raised-button color="warn" class="buttonsalida">Salida</button> <!-- boton Salida-->
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>  
+  </mat-sidenav-content>
+</mat-sidenav-container>

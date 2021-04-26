@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "amcrud-bbd66": {
+      "hosting": {
+        "app": [
+          "amcrud-bbd66"
+        ]
+      }
+    }
+  }
+}

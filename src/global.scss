@@ -24,3 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+snack-bar-container.success {
+    background-color: #5cb85c;
+    color: white;
+}
+
+snack-bar-container.notification simple-snack-bar{
+    font-size: 18px !important;
+    font-weight: bold;
+}

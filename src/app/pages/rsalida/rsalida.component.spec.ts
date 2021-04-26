@@ -1,18 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-import { LoginComponent } from './login.component';
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+import { RsalidaComponent } from './rsalida.component';
+
+describe('RsalidaComponent', () => {
+  let component: RsalidaComponent;
+  let fixture: ComponentFixture<RsalidaComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginComponent ],
+      declarations: [ RsalidaComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LoginComponent);
+    fixture = TestBed.createComponent(RsalidaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

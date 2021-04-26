@@ -1,0 +1,24 @@
+<form [formGroup]="service.form" class="normal-form">
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden" formControlName="$key">
+          <button *ngFor="let lote of propiedadService.array" >
+            {{lote.name}}-{{lote.casa}}
+          </button>
+        <!-- <mat-form-field>
+          <mat-select formControlName="lote" placeholder="Seleccionar lote">
+            <mat-option>Ninguno</mat-option>
+            <ng-container *ngFor="let lote of propiedadService.array">
+              <button value="{{lote.$key}}">{{lote.name}}-{{lote.casa}}</button>
+            </ng-container>z
+          </mat-select> -->
+        <!-- </mat-form-field> -->
+        <div class="button-row">
+          <button mat-raised-button color="primary" type="submit" [disabled]="service.form.invalid">Submit</button>
+
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

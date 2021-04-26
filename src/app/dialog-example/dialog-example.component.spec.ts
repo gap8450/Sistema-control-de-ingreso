@@ -1,18 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-import { LoginComponent } from './login.component';
 
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+import { DialogExampleComponent } from './dialog-example.component';
+
+describe('DialogExampleComponent', () => {
+  let component: DialogExampleComponent;
+  let fixture: ComponentFixture<DialogExampleComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginComponent ],
+      declarations: [ DialogExampleComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LoginComponent);
+    fixture = TestBed.createComponent(DialogExampleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

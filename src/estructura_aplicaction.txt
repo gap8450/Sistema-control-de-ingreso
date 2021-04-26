@@ -1,0 +1,31 @@
+● src
++---● app
+|   +--● login
+|   |  |--login.component.ts|.html|.css
+|   +--● control
+|   |  |--control.component.ts|.html|.css
+|   +--● publico
+|   |  |--publico.component.ts|.html|.css
+|   |  +--● registro
+|   |  |  |--registro.component.ts|.html|.css
+|   +--● propiedad
+|   |  |--propiedad.component.ts|.html|.css
+|   +--● rsalida
+|   |  |--rsalida.component.ts|.html|.css
+|   +--● administracion
+|   |  |--administracion.component.ts|.html|.css
+|   |  +--● crear-usuario
+|   |  |  |--crear-usuario.component.ts|.html|.css
+|   |  +--● crear-propiedad
+|   |  |  |--crear-propiedad.component.ts|.html|.css
+|   |  |
+|   |  +--● shared
+|   |     |--login.service.ts (form group)
+|   |     |--registro.service.ts (form group)
+|   |     |--rsalida.service.ts (form group)
+|   |     |--administracion.service.ts (form group)
+|   |     |--crear-propiedad.service.ts (form group)
+|   |     |--propiedad.service.ts (form group)
+|   |     |--crear-usuario.service.ts (form group)
+|   |
+|   |--app.module.ts

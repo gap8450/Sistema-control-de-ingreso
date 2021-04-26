@@ -1,27 +1,36 @@
     <!-- CONTENEDOR -->
- <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="30px">  
-
-  <div fxLayout fxLayoutAlign="center">
-    <img src="assets/img/Logoumb.png"/> <!-- LOGO -->
-  </div>
-  <div fxLayout="row" fxLayoutAlign="center">
-    <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="10px">
+ <div fxLayout="row" fxLayoutAlign="center" class="login-page">  
+  <div fxLayout="column">
+    <mat-card>
+      <div>
+        <img mat-card-image src="assets/img/LogoCBM.jpg" alt="logocondominio" class="logo-pagelogin">
+      </div>  
+     <!-- Card para formulario login-->
+    <div fxLayout="column" fxLayoutGap="10px">
        <!-- INPUT USUARIO -->
       <mat-form-field appearance="fill">
         <mat-label>Usuario</mat-label>
-        <input matInput>
+        <input matInput name="nombreUsuario" [(ngModel)]="nombreUsuario">
       </mat-form-field>
        <!-- INPUT CONTRASEÑA -->
       <mat-form-field appearance="fill">
         <mat-label>Contraseña</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'">
+        <input matInput [type]="hide ? 'password' : 'text'" name="password" [(ngModel)]="password">
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
       </mat-form-field>
+       <!-- BOTON ENTRAR -->
+       <button mat-stroked-button color="primary" class="btn-entrar" (click)="login()" [disabled]="nombreUsuario.length === 0 && password.length === 0 ">Entrar</button>
     </div>
-     <!-- BOTON ENTRAR -->
-    <button mat-stroked-button color="primary" >Entrar</button>
+  </mat-card>
   </div>
 </div>
+<footer>
+  <div fxLayoutAlign="center">
+    <P>
+      Derechos reservados
+    </P>
+  </div>
+</footer>
 
